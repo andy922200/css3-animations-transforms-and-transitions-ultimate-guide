@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  position:relative;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed red;
+  margin: 0 auto;
+}
+
+.inner{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.box1{
+  border: 1px solid black;
+  transform: scale(1.5,1.5);
+}
+
+.box2{
+  border: 2px solid orange;
+  transform: scale(0.75);
+}
+
+.box3{
+  border: 2px solid green;
+  transform: scaleY(1.75);
+}
+
+.box4{
+  border: 2px solid blue;
+  transform: rotate(-30deg);
+}
+
+.box5{
+  border: 2px solid tomato;
+  transform: rotate(30grad);
+}
+
+.box6{
+  border: 2px solid purple;
+  transform: rotate(0.5turn);
+}
