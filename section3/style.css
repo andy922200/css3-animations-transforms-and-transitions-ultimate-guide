@@ -2,6 +2,21 @@
   box-sizing: border-box;
 }
 
+body{
+  background: url('https://picsum.photos/id/131/1920/1080') repeat;
+}
+
+.polaroid-gallery{
+  text-align: center;
+}
+
+.polaroid-gallery-title{
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
 .polaroid-card{
   display:inline-block;
   background-color: #eee6d8;
@@ -14,4 +29,30 @@
   margin-top: 0.5rem;
   letter-spacing: 2px;
   text-align: center;
+}
+
+.polaroid-card:nth-of-type(odd){
+  transform: rotate(-15deg);
+}
+
+.polaroid-card:nth-of-type(odd):before{
+  content:'';
+  display: block;
+  background-color: rgba(53, 224, 124, 0.50);
+  width:100px;
+  height:25px;
+  transform: rotate(25deg) translate(140px, -65px);
+}
+
+.polaroid-card:nth-of-type(even){
+  transform: rotate(15deg);
+}
+
+.polaroid-card:nth-of-type(even):before{
+  content:'';
+  display: block;
+  background-color: rgba(53, 224, 124, 0.5);
+  width:100px;
+  height:25px;
+  transform: rotate(-24deg) translate(-30px,-25px);
 }
