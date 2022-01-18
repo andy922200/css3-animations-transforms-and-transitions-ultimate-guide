@@ -43,3 +43,19 @@
 .step-end{
     transition-timing-function: step-end;
 }
+
+.steps{
+    transition-timing-function: steps(2)
+}
+
+.steps-start{
+    transition-timing-function: steps(10, start)
+}
+
+.steps-end{
+    transition-timing-function: steps(10, end)
+}
+
+.bg-green{
+    background-color:green;
+}
