@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+
+.transition{
+    color:white;
+    background-color: red;
+    width:200px;
+    padding:10px;
+    margin:10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+.container:hover .transition{
+    margin-left: 500px;
+}
+
+.cubic{
+    transition-timing-function: cubic-bezier(0.1,0.2,0.3,0.4);
+}
