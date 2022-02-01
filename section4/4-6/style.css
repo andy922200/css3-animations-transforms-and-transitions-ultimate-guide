@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+.together{
+    width:200px;
+    height:150px;
+    background-color: red;
+    /* transition-property: transform;
+    transition-duration: 1.25s;
+    transition-timing-function: cubic-bezier(0.62, 0.42, 0.28, 1.01);
+    transition-delay: 0.5s; */
+    /* shorthand*/
+    transition: transform 1.25s cubic-bezier(0.62, 0.42, 0.28, 1.01) 0.5s;
+}
+
+.together:hover{
+    transform:translateX(500px);
+}
