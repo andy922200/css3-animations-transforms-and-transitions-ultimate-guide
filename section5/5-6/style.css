@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+.link-container{
+    background-color: darkcyan;
+    padding:1rem;
+	height:200px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link{
+	text-decoration: none;
+	font-size:24px;
+	color:white;
+	position:relative;
+    overflow: hidden;
+}
+
+.initial-text{
+    display:block;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.13, 1.2);
+}
+
+.link::after{
+    content: attr(data-swipe-text);
+    position: absolute;
+    bottom: -100%;
+    left:0;
+    right:0;
+    display: block;
+    transition: bottom 0.5s cubic-bezier(0.25, 0.1, 0.13, 1.2);
+}
+
+.link:hover .initial-text{
+    transform: translateY(-100%);
+}
+
+.link:hover::after{
+    bottom:0;
+}
