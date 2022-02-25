@@ -1,0 +1,26 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    background-color: #d2d2d2;
+    border:0;
+    cursor:pointer;
+    transition: transform 0.25s ease-in-out;
+}
+
+.button.grow:hover{
+    transform: scale(1.2);
+}
+
+.button.shrink:hover{
+    transform: scale(0.8);
+}
