@@ -1,0 +1,57 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    background-color: #d2d2d2;
+    border:0;
+    cursor:pointer;
+    position:relative;
+    overflow: hidden;
+}
+
+.slice-vertical span{
+    position: relative;
+    z-index:2;
+    transition: color 0.4s;
+}
+
+.slice-vertical:hover span{
+    color:white;
+}
+
+.slice-vertical::before{
+    position: absolute;
+    content: '';
+    width:50%;
+    height:100%;
+    background-color: #cc951b;
+    left:0;
+    top:-100%;
+    transition: top 0.4s;
+}
+
+.slice-vertical:hover::before,
+.slice-vertical:hover::after{
+    top:0;
+}
+
+.slice-vertical::after{
+    position: absolute;
+    content: '';
+    width:50%;
+    height:100%;
+    background-color: #cc951b;
+    right:0;
+    top:100%;
+    transition: top 0.4s;
+}
+
