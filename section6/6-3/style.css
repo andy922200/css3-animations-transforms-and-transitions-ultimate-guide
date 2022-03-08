@@ -18,13 +18,15 @@ button{
     overflow: hidden;
 }
 
-.slice-vertical span{
+.slice-vertical span,
+.slice-horizontal span{
     position: relative;
     z-index:2;
     transition: color 0.4s;
 }
 
-.slice-vertical:hover span{
+.slice-vertical:hover span,
+.slice-horizontal:hover span{
     color:white;
 }
 
@@ -55,3 +57,32 @@ button{
     transition: top 0.4s;
 }
 
+.slice-horizontal::before{
+    position: absolute;
+    content: '';
+    width:100%;
+    height:50%;
+    background-color: #cc951b;
+    left:-100%;
+    top:0%;
+    transition: left 0.4s;
+}
+
+.slice-horizontal:hover::before{
+    left:0;
+}
+
+.slice-horizontal::after{
+    position: absolute;
+    content: '';
+    width:100%;
+    height:50%;
+    background-color: #cc951b;
+    right:-100%;
+    top:50%;
+    transition: right 0.4s;
+}
+
+.slice-horizontal:hover::after{
+    right:0;
+}
