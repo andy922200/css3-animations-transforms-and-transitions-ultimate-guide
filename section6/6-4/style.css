@@ -49,3 +49,35 @@ button{
     border-left-color: transparent;
     transition: width 0.6s ease, height 0.6s ease;
 }
+
+.right-top-left-bottom::before{
+    position:absolute;
+    content:'';
+    width:25px;
+    height:25px;
+    top:0;
+    right:0;
+    border: 2px solid black;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.right-top-left-bottom:hover::before,
+.right-top-left-bottom:hover::after{
+    width:100%;
+    height:100%;
+}
+
+.right-top-left-bottom::after{
+    position:absolute;
+    content:'';
+    width:25px;
+    height:25px;
+    bottom:0;
+    left:0;
+    border: 2px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transition: width 0.6s ease, height 0.6s ease;
+}
