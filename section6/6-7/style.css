@@ -1,0 +1,51 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width:100px;
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    border:0;
+    cursor:pointer;
+    position:relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    color:black;
+}
+
+.button-first .button-first-text{
+    position: relative;
+    z-index:2;
+    transition: color 0.5s;
+}
+
+.button-first:hover .button-first-text{
+    color:white;
+}
+
+.button-first-pseudo{
+    content:'';
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    width:0;
+    height:0;
+    background-color: red;
+    border-radius: 50%;
+    z-index:1;
+    transform: translate(calc(-50% - 1rem), calc(-50% - 1rem));
+    transition: width 0.5s, height 0.5s;
+}
+
+.button-first:hover .button-first-pseudo{
+    width:300px;
+    height:300px
+}
