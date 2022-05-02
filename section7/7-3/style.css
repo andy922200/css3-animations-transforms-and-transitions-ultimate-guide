@@ -1,0 +1,40 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    width:300px;
+    height:200px;
+    margin: 10px;
+    padding: 0;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+figure img{
+    width:100%;
+}
+
+.filter-sepia{
+    filter:sepia(100%);
+    transition: filter 0.5s;
+}
+
+.filter-sepia:hover {
+    filter: sepia(0);
+}
+
+.filter-grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.filter-grayscale:hover {
+    filter: grayscale(0);
+}
