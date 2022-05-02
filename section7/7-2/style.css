@@ -1,0 +1,51 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    width:300px;
+    height:200px;
+    margin: 10px;
+    padding: 0;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+figure img{
+    width:100%;
+}
+
+.fig-scale-smaller img{
+    transition: 0.3s transform;
+    transform: scale(1.25);
+}
+
+.fig-scale-smaller:hover img{
+    transform: scale(1);
+}
+
+.fig-scale-from-left img {
+    transition: 0.3s width;
+    width: 400px;
+}
+
+.fig-scale-from-left:hover img {
+    width: 300px;
+}
+
+.fig-scale-from-right img {
+    width: 400px;
+    transform: translate(-100px);
+    transition: 0.3s width, 0.3s transform;
+}
+
+.fig-scale-from-right:hover img {
+    width:300px;
+    transform: translate(0);
+}
