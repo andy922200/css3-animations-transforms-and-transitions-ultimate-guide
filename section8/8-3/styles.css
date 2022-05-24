@@ -16,41 +16,13 @@ body {
   background: url('sprite.png');
   margin-top: 30px;
   cursor: pointer;
-  animation: sprite 1s steps(6) infinite;
+  animation: sprite 1s steps(6);
+
+  animation-delay: 3s;
+  animation-iteration-count: 6;
 }
 
 @keyframes sprite {
   from { background-position: 0px 0px;}
   to { background-position: -1536px 0px;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
