@@ -1,0 +1,44 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.heartbeat{
+    position:relative;
+    width:60px;
+    height:60px;
+    animation: heartbeat 1s linear infinite;
+}
+
+.heartbeat::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 60px;
+    height: 40px;
+    background-color: #ea65fa;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.heartbeat::after{
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #ea65fa;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@keyframes heartbeat{
+    from, to { transform: rotate(45Deg) scale(0.8);}
+    50% {transform: rotate(45Deg) scale(1);}
+}
