@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: red;
+    animation: pulse 1s linear infinite;
+}
+
+.dot1{
+    animation-delay: 0.2s;
+}
+
+.dot2{
+    animation-delay: 0.4s;
+}
+
+.dot3{
+    animation-delay: 0.6s;
+}
+
+@keyframes pulse{
+    0%, 100% {transform: scale(0.2)}
+    50% {transform: scale(1)}
+}
+
