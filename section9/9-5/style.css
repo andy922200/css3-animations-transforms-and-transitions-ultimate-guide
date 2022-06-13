@@ -1,0 +1,46 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.rotating-squares{
+    position: relative;
+    width:60px;
+    height:60px;
+}
+
+.rotating-squares::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    border: 4px solid blue;
+    animation: rotate 2s linear infinite;
+}
+
+.rotating-squares::after{
+    content: '';
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:30px;
+    height:30px;
+    border: 4px solid blue;
+    animation: rotate-reverse 2s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0);} 
+    to { transform: rotate(360deg);}
+}
+
+@keyframes rotate-reverse{
+    from { transform: rotate(0);}
+    to { transform: rotate(-360deg);}
+}
