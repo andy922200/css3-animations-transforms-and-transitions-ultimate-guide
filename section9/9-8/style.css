@@ -1,0 +1,24 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.rotating-square{
+    margin-top: 32px;
+    width: 30px;
+    height: 30px;
+    background-color: #23a473;
+    border-radius: 50%;
+    animation: rotatingSquare 1.5s ease infinite;
+}
+
+@keyframes rotatingSquare {
+    0%{transform: scale(1) rotate(0);}
+    50%{transform: scale(2) rotate(-180deg); border-radius: 0;}
+    100%{transform: scale(1) rotate(-360deg);}
+}
+
