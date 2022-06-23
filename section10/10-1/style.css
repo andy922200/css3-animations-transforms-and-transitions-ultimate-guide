@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.typing-text{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+    font-size: 32px;
+    border-right: 3px solid orange;
+    animation: blink-caret 0.5s step-end infinite, type 4s steps(60, end) infinite;
+}
+
+@keyframes blink-caret{
+    0%, 100% {border-color: transparent;}
+    50% {border-color: orange;}
+}
+
+@keyframes type {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
