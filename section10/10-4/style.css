@@ -1,0 +1,36 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-wrapper{
+    width:500px;
+}
+
+.progress-bar{
+    width:100%;
+    background-color: #e0e0e0;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.progress-bar-fill{
+    height:30px;
+    background-color: #5757ff;
+    border-radius: 2px;
+    animation: progress 5s ease;
+}
+
+@keyframes progress {
+    0% {width: 0%;}
+    45% {width: 45%;}
+    54% {width: 54%;}
+    67% {width: 67%;}
+    82% {width: 82%;}
+    95% {width: 95%;}
+    100% {width: 100%;}
+}
