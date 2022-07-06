@@ -1,0 +1,33 @@
+h2{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.box-wrapper{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: perspective(200px) translateZ(-100px);
+}
+
+.box-wrapper-2{
+    perspective: 200px;
+    perspective-origin: 50px 50px;
+}
+
+.box-2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: translateZ(-100px);
+}
